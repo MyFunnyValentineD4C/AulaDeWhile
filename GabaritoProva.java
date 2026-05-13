@@ -95,12 +95,12 @@ public class GabaritoProva {
 			}
 			
 				
-				ler.close();
+			
 			
 			
 			
 		}
-			
+			ler.close();
 	}
 
 			
