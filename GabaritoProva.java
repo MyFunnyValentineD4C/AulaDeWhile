@@ -12,6 +12,7 @@ public class GabaritoProva {
 		int R1, R2, R3, R4, R5, R6, R7, R8, R9, R10;
 		int PontuacaoDoAluno = 0;
 		int Resposta;
+		int PontuacaoTotal = 0;
 	
 		while (ProxAluno == 1) {
 			System.out.println("A - 1, B - 2, C - 3, D - 4, E - 5");
@@ -77,22 +78,33 @@ public class GabaritoProva {
 			}
 			System.out.println("Sua pontuação foi de " +PontuacaoDoAluno);
 			NAlunos++;
+			PontuacaoTotal += PontuacaoDoAluno;
+			PontuacaoDoAluno -= PontuacaoDoAluno;
 			System.out.println("Algum aluno irá utilizar o sistema?");
 			System.out.println("1 - Sim, 2 - Não");
 			Resposta = ler.nextInt();
 			
-			if (Resposta == 0); {
+		
+		
+			
+			if (Resposta == 2) {
 			ProxAluno--;
+			System.out.println("Total de alunos que utilizaram o sistema: " +NAlunos);
+			System.out.println("Média da turma: " +(PontuacaoTotal / NAlunos) );
 			
 			}
 			
-			}
+				
+				ler.close();
 			
 			
-			}
-
 			
 		}
+			
+	}
+
+			
+}
 		
 	
 
